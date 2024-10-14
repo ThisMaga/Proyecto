@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Personal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        href="#arriba">
+    <style>
+        @font-face {
+            font-family: Cabin;
+            src: url(./Fuentes/Cabin.ttf);
+        }
+
+        @font-face {
+            font-family: Campana;
+            src: url(./Fuentes/CampanaScript_PERSONAL_USE_ONLY.otf);
+        }
+
+        @font-face {
+            font-family: Brodille;
+            src: url(./Fuentes/Brodille-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Winter;
+            src: url(./Fuentes/Night\ Winter.otf);
+        }
+
+        @font-face {
+            font-family: September;
+            src: url(./Fuentes/Autumn\ in\ September.ttf);
+        }
+
+        body {
+            margin-top: auto;
+            background:
+                linear-gradient(rgba(7, 0, 0, 0.5), rgba(5, 20, 79, 0.5)),
+                url('./Imagenes/findo.jpg');
+            background-size: cover;
+            position: relative;
+
+        }
+
+        body::before {
+            position: absolute;
+            background-color: rgba(9, 13, 40, 0.981);
+            z-index: 1;
+            /* Asegura que esté sobre la imagen */
+        }
+
+        .imagen {
+            border-radius: 2px;
+            transition: 3s;
+            box-shadow: 3px 3px 3px rgb(175, 174, 237);
+
+        }
+
+        .card {
+            transition: 3s;
+            width: 100%;
+            height: 3s;
+            background-color: rgb(30, 17, 79);
+            color: antiquewhite;
+        }
+
+        .card:hover {
+            width: 105%;
+        }
+
+        .row {
+            text-align: center;
+            justify-content: center;
+        }
+
+        nav#menu {
+            background-image: url(./Imagenes/estrellas2.gif);
+            color: aliceblue;
+            background-size: cover;
+        }
+
+        footer {
+            background-image: url(./Imagenes/estrellas2.gif);
+            background-size: cover;
+        }
+
+        #sobre-mi h1 {
+            font-family: September;
+            font-size: 80px;
+        }
+
+        #sobre-mi p {
+            font-size: 20px;
+            text-indent: 2em;
+        }
+
+        #contenido {
+            background-color: rgb(207, 216, 244);
+            border-radius: 5px;
+            padding: 20px;
+            width: 1200px;
+            margin-top: auto;
+        }
+
+        #contacto {
+            justify-content: left;
+            font-family: Cabin;
+        }
+
+        #formContacto {
+            width: 50%;
+            margin-left: 0;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #otro {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+        .fuente{
+            font-family: ;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Header y Menú -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="arriba">Mi Página</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar proyectos..." id="buscador">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="container mt-5" id="contenido">
+        <!--  Sobre mí -->
+        <section id="sobre-mi">
+
+            <h1> Sobre Mí </h1>
+            <p>¡Hola! Soy Gabriela y este es mi espacio personal, tengo 30 años y soy Venezolana
+                actualmente estoy
+                estudiando Administración en Sistemas Informáticos en Red, en el Centro Concertado Cuatrovientos.
+                Voy por el segundo año de curso y pronto estaré en mis prácticas.</p>
+            <p>En el año 2015 me gradué de Licenciada en Contaduría Pública en Caracas - Venezuela, trabajé en varias
+                empresas como asistente contable, sin embargo, fue allí donde me di cuenta, que me gustaba más la
+                Administración de sistemas informáticos, gracias a unos compañeros de trabajo en ese entonces...</p>
+            <p>Al momento, no tome decisión alguna, si no al pasar los años, crecer, migrar y empezar de cero en otro
+                país, me motivaron a comenzar una nueva meta, la cual era estudiar algo relacionado con la informática.
+            </p>
+
+            <p>Dentro del Centro he conocido grandes personas, tengo unos buenos compañeros de clase y amigos... En el
+                primer año hemos trabajado en un proyecto del IEEE bastante conocido. ¡Ya te contaré más adelante!</p>
+
+            <p> Entro otras cosas, he descubierto que mis intereses personales son el deporte de natación, jugar
+                voleibol, caminar en el monte, ir al cine, comer, viajar, conocer lugares nuevos, y por último pero no
+                menos importante estar con las
+                personas que quiero y con mis mascotas .</p>
+
+        </section>
+
+        <!-- Página de proyectos -->
+        <section id="proyectos" class="mt-5">
+            <h2 class="fuente">Actividades y Proyectos </h2>
+            <div class="row">
+                <!-- Cada proyecto será una card -->
+                <div class="col-md-4" data-proyecto="proyecto1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Protectora Refugio de Luna</h5>
+                            <img src="./Imagenes/perrofeliz.jpg" alt="IEEE" width="90%" height="90%" class="imagen" ;>
+                            <p class="card-text">Procterora animal</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto1">Ver
+                                más</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4" data-proyecto="IEEE">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">IEEE</h5>
+                            <img src="./Imagenes/IEEE_con_Salesianos.jpeg" alt="IEEE" width="100%" class="imagen">
+                            <p class="card-text">Participación en un proyecto Intermodular con otro Instituto</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto2">Ver
+                                más</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Más proyectos aquí -->
+            </div>
+        </section>
+
+
+        <!-- Modal Proyecto 1 -->
+        <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProyecto1Label">Protectora Refugio de Luna</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Junto con mis compañeros hemos realizado una página web como un trabajo grupal, donde decidimos
+                        crear una página web que se dedicaba a rescatar perritos y también darlos en adopción, esta
+                        página brindaba información importante sobre datos y cifras en España, razones comunes de
+                        abandono, y una posible solución de cómo abordar el tema. También, muestra el estado de los
+                        animales adoptados después de un tiempo, cerciorándose de su bienestar.
+                        Fue un proyecto muy bonito, ya que los protagonistas eran reales.
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Proyecto 2 -->
+        <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="modalProyecto2Label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProyecto2Label">IEEE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        La finalidad del <a
+                            href="http://www.cuatrovientos.org/el-proyecto-l3-finalista-en-el-ii-certamen-navarro-de-diseno-de-proyectos-de-aprendizaje-y-servicio-solidario/">
+                            Proyecto I3</a> , era manufacturar un producto que ayudara a personas con capacidades
+                        especiales a llevar de la mejor forma posible su día a día. En este contexto hicimos unidos los alumnos del
+                        instituto <a href="http://www.cuatrovientos.org/" target="_blank"
+                            class="enlace">Cuatrovientos</a>y los del instituto <a href="https://salesianospamplona.es/" target="_blank"
+                            class="enlace">Salesianos</a> para llevar a cabo el proyecto. Este fue un proyecto
+                        intermodular e interdisciplinar. 
+                        Esto quiere decir que, a lo largo de todo el curso, dicho proyecto se fue
+                        desarrollando tomando conocimientos de todas las asignaturastodas dadas y ambos institutos
+                        complementamos los conocimientos de nuestros compañeros con los nuestros propios.
+
+                        Cabe recalcar que este proyecto tenía un fin puramente inclusivo y que no se buscaba ningún tipo
+                        de
+                        rédito económico al hacerlo. En este proyecto mis compañeros y yo tuvimos que tener en cuenta las
+                        necesidades de los usuarios a los que iban destinados cada proyecto, las cuales eran y son muy
+                        variadas, por ello una parte fundamental a la hora de plantear el proyecto fue escuchar a las
+                        personas para conocer sus necesidades específicas y así poder hacer un producto útil que les
+                        ayudase a llevar su día a día de la mejor forma posible.
+                        <a
+                            href="https://www.cuatrovientos.org/el-proyecto-l3-finalista-en-el-ii-certamen-navarro-de-diseno-de-proyectos-de-aprendizaje-y-servicio-solidario/">
+                            El proyecto I3, finalista en el II Certamen Navarro de Aprendizaje y Servicio Solidario </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Página de contacto -->
+        <section id="contacto" class="mt-5">
+            <h2 class="fuente">Aquí puedes contactar conmigo</h2>
+            <form id="formContacto" class="otro">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Introduce tu nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        &copy; Gabriela Mendoza - 2024
+    </footer>
+
+
+    <!-- Script personalizado -->
+    <script>
+        $(document).ready(function () {
+            // Validar formulario
+            $('#formContacto').on('submit', function (event) {
+                event.preventDefault();
+                const email = $('#email').val();
+                const regex = /\S+@\S+\.\S+/;
+
+                if (regex.test(email)) {
+                    alert("Gracias!!! Su mensaje ha sido enviado.");
+                } else {
+                    alert("Por favor, introduce un correo válido.");
+                }
+            });
+
+            // Buscador de proyectos
+            $('#buscador').on('input', function () {
+                const query = $(this).val().toLowerCase();
+                $('.col-md-4').each(function () {
+                    const proyecto = $(this).data('proyecto').toLowerCase();
+                    if (proyecto.includes(query)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
