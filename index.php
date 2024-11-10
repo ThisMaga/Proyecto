@@ -82,7 +82,7 @@
             margin-top: auto;
         }
 
-        .contacto {
+        .contactos {
             justify-content: left;
             font-family: Cabin;
         }
@@ -109,6 +109,7 @@
 
 <body>
     <!-- Header y Menú -->
+     <!-- barra vieja 
     <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
         <div class="container-fluid">
             <a class="navbar-brand">Mi Página</a>
@@ -135,6 +136,38 @@
             </div>
         </div>
     </nav>
+    -->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+         <div class="container-fluid">
+            <a class="navbar-brand">Mi Página</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contac">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#agregar-proyecto">Ingresar Nuevo Proyecto</a>
+                    </li>
+                </ul>
+            <form class="d-flex" onsubmit="return false;">
+                <input class="form-control me-2" type="search" placeholder="Buscar" id="buscador" aria-label="Search">
+                <button class="btn btn-outline-success" type="button" id="btnBuscar">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+
+
 
     <main class="container mt-5" id="contenido">
         <!--  Sobre mí -->
@@ -173,7 +206,7 @@
         </section>
 
         <!-- Página de contacto -->
-        <section class="contacto" class="mt-5">
+        <section class="contactos" class="mt-5" id="contac">
             <h2 class="fuente">Aquí puedes contactar conmigo</h2>
             <form class="formContacto" class="formu">
                 <div class="mb-3">
@@ -191,7 +224,8 @@
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </section>
-        <section id="agregar-proyecto" class="mt-5 contacto">
+
+        <section id="agregar-proyecto" class="mt-5 contactos">
     <h2 class="fuente">Agregar Nuevo Proyecto</h2>
     <form action="index.php" method="POST" enctype="multipart/form-data" class="formContacto formu">
         <div class="mb-3">
@@ -263,4 +297,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
